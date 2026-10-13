@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareConnect | Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">CareConnect<span>.</span></div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="appointment.html" class="active">Book Appointment</a>
+            <a href="status.html">Appointment Status</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <p class="tagline">WE ARE HERE FOR YOU</p>
+            <h2>Book an Appointment</h2>
+            <p class="section-description">
+                Fill in your details to request an appointment.
+            </p>
+
+            <form id="appointmentForm" class="service-card"
+                  style="max-width: 650px; margin: auto; text-align: left;">
+
+                <label for="patientName">Patient Name</label>
+                <input type="text" id="patientName" name="patientName"
+                       placeholder="Enter your full name" required>
+
+                <label for="patientAge">Age</label>
+                <input type="number" id="patientAge" name="patientAge"
+                       min="1" max="120" placeholder="Enter your age" required>
+
+                <label for="patientEmail">Email Address</label>
+                <input type="email" id="patientEmail" name="patientEmail"
+                       placeholder="Enter your email" required>
+
+                <label for="doctor">Select Doctor</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">-- Choose a doctor --</option>
+                    <option value="Dr. Ananya Menon - General Medicine">Dr. Ananya Menon - General Medicine</option>
+                    <option value="Dr. Rahul Nair - Cardiology">Dr. Rahul Nair - Cardiology</option>
+                    <option value="Dr. Meera Thomas - Dermatology">Dr. Meera Thomas - Dermatology</option>
+                    <option value="Dr. Arjun Kumar - Pediatrics">Dr. Arjun Kumar - Pediatrics</option>
+                    <option value="Dr. Neha Joseph - Gynecology">Dr. Neha Joseph - Gynecology</option>
+                    <option value="Dr. Vivek Das - Orthopedics">Dr. Vivek Das - Orthopedics</option>
+                </select>
+
+                <label for="appointmentDate">Appointment Date</label>
+                <input type="date" id="appointmentDate"
+                       name="appointmentDate" required>
+
+                <label for="appointmentTime">Preferred Time</label>
+                <select id="appointmentTime" name="appointmentTime" required>
+                    <option value="">-- Choose a time --</option>
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                </select>
+
+                <label for="reason">Reason for Visit</label>
+                <textarea id="reason" name="reason" rows="4"
+                          placeholder="Briefly describe your reason for visiting"></textarea>
+
+                <button type="submit" class="btn primary"
+                        style="border: none; cursor: pointer; margin-top: 20px;">
+                    Submit Appointment Request
+                </button>
+
+                <p id="formMessage" role="status"
+                   style="margin-top: 15px;"></p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 CareConnect. All rights reserved.</p>
+        <p>Your health, our priority.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

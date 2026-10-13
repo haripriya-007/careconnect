@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareConnect | Appointment Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">CareConnect<span>.</span></div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="appointment.html">Book Appointment</a>
+            <a href="status.html" class="active">Appointment Status</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <p class="tagline">YOUR APPOINTMENTS</p>
+            <h2>Appointment Status</h2>
+            <p class="section-description">
+                View your appointment requests and manage your bookings.
+            </p>
+
+            <div id="appointmentList"
+                 style="max-width: 750px; margin: auto; text-align: left;">
+
+                <div class="service-card">
+                    <h3>Your Appointments</h3>
+                    <p id="emptyMessage">
+                        Your appointments will appear here after you submit
+                        a booking request.
+                    </p>
+                </div>
+
+            </div>
+
+            <div style="margin-top: 30px;">
+                <a href="appointment.html" class="btn primary">
+                    Book a New Appointment
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 CareConnect. All rights reserved.</p>
+        <p>Your health, our priority.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
